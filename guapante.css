@@ -1,0 +1,278 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(160,200,200);
+    color: rgb(80,100,100);
+}
+
+.encabezado{
+    background-color: rgb(80,100,100);
+    color: rgb(225,240,240);
+}
+
+.homeheader{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding: 5px;
+}
+
+.home-element1{
+    flex-grow: 1;
+    min-width: 70px;
+    max-width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.home-element2{
+    width: 70%;
+    min-width: 480px;
+    max-width: 100%;
+    flex-grow: 1;
+    text-align: center;
+    justify-items: center;
+    align-self: center;
+}
+
+.home-element3{
+    min-width: 120px;
+    flex-grow: 2;
+    text-align: center;
+    align-self: flex-end;
+    justify-self: center;
+}
+
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(225,240,240);
+}
+
+/* Menú desplegable del encabezado */
+
+/* menu principal de navegación*/
+
+#menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+   }
+   
+   /* items del menu */
+   
+   #menu ul li {
+    background-color:rgb(80,100,100);
+   }
+   
+   /* enlaces del menu */
+   
+   #menu ul a {
+    display:block;
+    color:rgb(225,240,240);
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    letter-spacing:1px;
+   }
+   
+   /* items del menu */
+   
+   #menu ul li {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+   }
+   
+   /* efecto al pasar el ratón por los items del menu */
+   
+   #menu ul li:hover {
+    background: rgb(160,200,200);
+   }
+
+/* menu desplegable */
+
+#menu ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#eee;
+    padding:0;
+   }
+   
+   /* items del menu desplegable */
+   
+   #menu ul ul li {
+    float:none;
+    width:150px
+   }
+   
+   /* enlaces de los items del menu desplegable */
+   
+   #menu ul ul a {
+    line-height:120%;
+    padding:10px 15px;
+   }
+   
+   /* items del menu desplegable al pasar el ratón */
+   
+   #menu ul li:hover > ul {
+    display:block;
+   }
+   
+   
+/* Sección MAIN del Index */
+
+.tarjeta{
+    margin: auto;
+    color: rgb(80,100,100);
+    padding: 10px;
+    background-color: rgb(225,240,240);
+    width: 80%;
+    border: solid 2px rgb(80,100,100);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(80,100,100);
+}
+
+.listaviñeta{
+    margin-left: 1rem;
+}
+
+/* Sección del formulario de contacto */
+
+form{
+    width: 450px;
+    margin: auto;
+    background: rgb(80,100,100);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 7px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#button{
+    background:#3ab193;
+    padding: 20px;
+}
+
+#button:hover{
+    cursor: pointer;
+}
+
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+
+ /* Sección de galería de fotos */
+
+ .carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+
+.foto{
+    flex: 0 0 auto;
+    margin: 20px 15px 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 5px 5px 5px rgb(80,100,100);
+    width: 400px;
+    height: 400px;
+}
+
+.pix{
+    border: none;    
+    border-radius: 10px;
+}
+
+
+/* Sección del Footer */
+
+.fúrer{
+    background-color: rgb(80,100,100);
+    color: rgb(225,240,240);
+    padding: 10px;
+}
+
+.botoncitos{
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+.mf{
+    background-color: rgb(80,100,100);
+    border: solid rgb(160,200,200) 2px;
+    border-radius: 5px;
+    display:inline-block;
+    padding: 10px;
+    width: 200px;
+    color: rgb(80,100,100);
+    font-weight: bold;
+    text-align: center;
+    margin: 0.5rem;
+}
+
+.mf:hover{
+    background: rgb(160,200,200);
+    color: rgb(225,240,240);
+}
+
+.iconomf:hover{
+    color: rgb(225,240,240)
+}
+
+.datamf{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.amf{
+    text-decoration: none;
+    color: rgb(225,240,240);
+    font-weight: bold;
+}
+
+/* correo de la WebMaster */
+
+.méiltu{
+    text-align:right;
+    /* text-align: center; */
+}
+
+.enlace{
+    color: rgb(225,240,240);
+    text-decoration: none;
+}
